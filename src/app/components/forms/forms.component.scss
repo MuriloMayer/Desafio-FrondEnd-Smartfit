@@ -62,10 +62,11 @@
 
 .form .form-btn {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  gap: 12px;
 }
 
 .form .form-btn .btn {
@@ -91,14 +92,30 @@
 }
 
 .form .form-checkbox {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   width: 100%;
 
   color: var(--light-grey);
   margin: 32px 0px;
+  gap: 12px;
 }
 
-.form .form-checkbox span {
-  position: absolute;
-  right: 0;
+.form .form-checkbox input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+@media (min-width: 768px) {
+
+  .form .form-btn {
+    flex-direction: row;
+  }
+
+  .form .form-checkbox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
