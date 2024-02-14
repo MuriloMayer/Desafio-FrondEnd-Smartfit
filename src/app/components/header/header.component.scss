@@ -4,7 +4,6 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-width: 100vw;
   gap: 34px;
 }
 
@@ -18,7 +17,7 @@ header .logo-container {
 }
 
 header .logo-container img {
-  height: 80px;
+  height: 60px;
 }
 
 header .text-container {
