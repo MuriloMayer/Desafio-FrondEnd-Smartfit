@@ -1,0 +1,82 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  max-width: 270px;
+  height: 350px;
+
+
+  padding: 12px;
+  gap: 8px;
+
+  background-color: rgb(245, 244, 244);
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 4px 2px rgba(214,214,214,1);
+  -moz-box-shadow: 1px 1px 4px 2px rgba(214,214,214,1);
+  box-shadow: 1px 1px 4px 2px rgba(214,214,214,1);
+}
+
+.card .divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(206, 199, 199)
+}
+
+.card span {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--red);
+}
+
+.card span.opened {
+  color: var(--green);
+}
+
+.card h3 {
+  color: var(--dark-grey);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card p {
+  color: var(--light-grey);
+  font-size: 14px;
+}
+
+.card ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  gap: 14px;
+}
+
+.card .img-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card li {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--dark-grey)
+
+}
+
+.card li b {
+  font-size: 18px;
+
+  color: var(--dark-grey);
+}
+
+.card img {
+  height: 60px;
+}

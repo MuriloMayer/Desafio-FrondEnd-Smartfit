@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { Locations } from './types/locations.interface';
+import { GetUnitsService } from './services/get-units.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'desafio-frontend-smarfit';
+
+  showList = new BehaviorSubject(false);
+  unitsLists: Locations[] = []
+
+  constructor(private unitService: GetUnitsService) {}
+
+  onSubmit() {
+    this.showList.next(true)
+
+    this.unitsLists = this.unitService.getAllFilteredUnits();
+  }
 }
