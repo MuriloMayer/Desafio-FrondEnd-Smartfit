@@ -62,9 +62,9 @@
 
 .form .form-btn {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   gap: 12px;
 }
@@ -79,7 +79,7 @@
   cursor: pointer;
 
   padding: 14px;
-  width: 25%;
+  width: 100%;
 }
 
 .form .form-btn .btn-primary {
@@ -111,6 +111,9 @@
 
   .form .form-btn {
     flex-direction: row;
+  }
+  .form .form-btn .btn {
+    width: 25%;
   }
 
   .form .form-checkbox {
